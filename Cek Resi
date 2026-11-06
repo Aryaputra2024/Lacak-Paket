@@ -1,0 +1,546 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://cekresi.pabjiqueen.workers.dev/
+Subject: Cek Resi
+Date: Fri, 06 Nov 2026 08:55:29 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--BUdCv5FUjDN780BPj77udxx69T4XeTskwv2pNEyugB----"
+
+
+------MultipartBoundary--BUdCv5FUjDN780BPj77udxx69T4XeTskwv2pNEyugB----
+Content-Type: text/html
+Content-ID: <frame-A55132A2F6869245AA23EC5715DE259D@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://cekresi.pabjiqueen.workers.dev/
+
+<!DOCTYPE html><html lang="id" data-theme="light" style="color-scheme: light;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-8bb04bac-7455-4588-a927-0f1ec3f33ae0@mhtml.blink" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3f5f8">
+
+<link rel="icon" type="image/x-icon" href="https://cekresi.pabjiqueen.workers.dev/favicon.ico?v=9">
+<link rel="icon" type="image/svg+xml" href="https://cekresi.pabjiqueen.workers.dev/favicon.svg?v=9">
+<title>Cek Resi</title>
+
+</head>
+<body>
+<header class="header">
+  <div class="brand"><div class="logo">C</div><div><div class="brand-title">Cek Resi</div></div></div>
+  <button type="button" id="themeToggle" class="theme-toggle" aria-label="Aktifkan Dark Mode" title="Aktifkan Dark Mode" aria-pressed="false"><span aria-hidden="true">🌙</span><span>Dark</span></button>
+  <div class="account" id="authStatus"><span class="user-pill" id="userPill">🟠 Free User</span><a class="mini-btn blue" href="https://cekresi.pabjiqueen.workers.dev/login.html">Login Premium</a></div>
+</header>
+<main class="layout">
+  <aside class="sidebar panel">
+    <h2>Paste Resi</h2><div id="limitText" class="hint">Free 3 resi/hari. 1 baris 1 resi.</div>
+    <label for="courierSelect" class="hint" style="display:block;margin-top:14px">Pilih Kurir / Ekspedisi</label>
+    <select id="courierSelect" class="courier-select" aria-label="Pilih kurir" style="display:block;width:100%;margin-top:6px;background:#040405;border:1px solid #393b42;border-radius:11px;color:#f8fafc;padding:11px 12px"><option value="">Pilih kurir...</option><option value="7">Anteraja</option><option value="2">ID Express</option><option value="8">J&amp;T Cargo</option><option value="3">J&amp;T Express</option><option value="5">POS Indonesia</option><option value="6">Shopee Express Indonesia</option><option value="1">SiCepat</option><option value="9">Tiki</option></select>
+    <div id="activePeriodCard" class="provider-balance hidden" aria-label="Masa Aktif Akun">
+      <div class="balance-content"><span class="provider-balance-title">Masa Aktif Akun</span><strong id="activePeriodValue" class="provider-balance-value">Memuat...</strong><small id="activePeriodDetail" class="provider-balance-meta" role="status" aria-live="polite"></small></div>
+    </div>
+    <div id="providerBalanceCard" class="provider-balance hidden" aria-label="Saldo">
+      <div class="balance-content"><span id="providerBalanceTitle" class="provider-balance-title">Saldo</span><strong id="providerBalanceValue" class="provider-balance-value">Memuat...</strong><small id="providerBalanceUpdated" class="provider-balance-meta" role="status" aria-live="polite">Menunggu data saldo</small><small id="accountQuotaMeta" class="provider-balance-meta hidden"></small><div class="provider-clock" aria-label="Tanggal dan waktu saat ini"><span id="providerClockDate" class="provider-clock-date">Jumat, 6 November 2026</span><span class="provider-clock-time"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><time id="providerClockTime">15:55:28 WIB</time></span></div></div>
+      <button id="providerBalanceRefresh" type="button" class="provider-refresh" title="Refresh saldo" aria-label="Refresh saldo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.5 9a7 7 0 0 1 11.6-2L20 12M4 12l2.9 5a7 7 0 0 0 11.6-2"></path></svg></button>
+    </div>
+    <label for="resiInput" class="hint" style="position:absolute;left:-9999px">Nomor resi, satu per baris</label>
+    <textarea id="resiInput" class="text-area" spellcheck="false" placeholder="002xxxxx
+004xxxxx
+006xxxxx"></textarea>
+    <div class="input-meta"><span id="resiCount">0 resi</span></div>
+    <div id="guestProtection" class="guest-protection hidden">
+      <div class="guest-protection-title">Verifikasi Free User</div>
+      <span class="guest-protection-note">Selesaikan verifikasi satu kali untuk memulai sesi tamu. Batas tetap 3 resi per hari per IP dan per sesi.</span>
+      <div id="guestTurnstileWidget" class="guest-turnstile"></div>
+      <span id="guestProtectionStatus" class="guest-protection-status" role="status" aria-live="polite"></span>
+    </div>
+    <div id="impersonationReadOnlyNotice" class="guest-protection" style="display:none;margin:12px 0;padding:12px 14px;border:1px solid #d97706;border-radius:12px;background:rgba(217,119,6,.10);color:inherit;line-height:1.5">
+      <strong>Mode lihat saja aktif</strong><br>Anda sedang melihat halaman utama sebagai akun lain. Pengecekan resi dan semua perubahan data dinonaktifkan.
+    </div>
+    <button id="btnCek" type="button" class="primary">CEK RESI</button>
+    <div class="side-actions"><button id="btnClear" type="button">Clear</button><button id="btnCopyFail" type="button">Copy Gagal</button></div>
+    
+  </aside>
+  <section class="content" aria-label="Hasil pelacakan">
+    <div class="filter-note">Klik kartu untuk filter hasil</div>
+    <div class="stats" aria-label="Filter status">
+      <button class="stat stat-total" data-filter="total" aria-pressed="true"><span>📋 Total</span><span class="value" id="sumTotal">0</span></button>
+      <button class="stat stat-process" data-filter="process" aria-pressed="false"><span>⏰ On Process</span><span class="value" id="sumProses">0</span></button>
+      <button class="stat stat-delivered" data-filter="delivered" aria-pressed="false"><span>✅ Delivered</span><span class="value" id="sumDiterima">0</span></button>
+      <button class="stat stat-failed" data-filter="failed" aria-pressed="false"><span>❌ Failed</span><span class="value" id="sumGagal">0</span></button>
+    </div>
+    <div class="progress" id="progressText" role="status" aria-live="polite">Belum ada resi yang diproses.</div>
+    <div class="results panel">
+      <div class="results-header"><div><h2>HASIL TRACKING</h2><p class="results-subtitle" id="tableSubtitle">Klik baris untuk lihat detail · Filter: Semua · 0 hasil</p></div><div class="csv-actions"><button class="csv-btn" type="button" id="btnExport" disabled="">Export CSV Lengkap</button><button class="csv-btn secondary" type="button" id="btnExportFiltered" disabled="">Pilih Status untuk Export</button></div></div>
+      <div class="table-scroll"><table class="data-table"><thead><tr><th>NO</th><th>RESI</th><th>STATUS</th><th>PENGIRIM</th><th>PENERIMA</th><th>ORIGIN → DEST</th><th>LAST UPDATE</th><th aria-label="Detail"></th></tr></thead><tbody id="resultBody"><tr><td colspan="8" class="empty">Belum ada data</td></tr></tbody></table></div>
+      <div class="hint-bottom">Export CSV Lengkap mengunduh seluruh hasil tracking saat ini. Tombol ekspor kedua mengikuti filter status yang dipilih.</div>
+    </div>
+  </section>
+</main>
+<dialog id="homePasswordModal" class="home-password-modal" aria-labelledby="homePasswordTitle">
+  <div class="home-password-inner">
+    <div class="home-password-heading"><h2 id="homePasswordTitle">Ganti Password</h2><button type="button" id="homePasswordClose" aria-label="Tutup">✕</button></div>
+    <p>Masukkan password lama dan password baru. Setelah berhasil, Anda perlu login kembali.</p>
+    <form id="homePasswordForm">
+      <label for="homeOldPassword">Password Lama</label><input id="homeOldPassword" type="password" autocomplete="current-password" required="" maxlength="200">
+      <label for="homeNewPassword">Password Baru (minimal 8 karakter)</label><input id="homeNewPassword" type="password" autocomplete="new-password" minlength="8" maxlength="200" required="">
+      <label for="homeConfirmPassword">Ulangi Password Baru</label><input id="homeConfirmPassword" type="password" autocomplete="new-password" minlength="8" maxlength="200" required="">
+      <div class="home-password-actions"><button type="button" id="homePasswordCancel">Batal</button><button type="submit" id="homePasswordSubmit">Simpan Password</button></div>
+      <p id="homePasswordResult" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</dialog>
+<dialog id="accountExpiryModal" class="expiry-modal" aria-labelledby="accountExpiryTitle">
+  <div class="expiry-modal-inner">
+    <div class="expiry-modal-heading"><span class="expiry-modal-icon" aria-hidden="true">⏰</span><h2 id="accountExpiryTitle">Masa Aktif Habis</h2></div>
+    <p id="accountExpiryMessage" class="expiry-modal-message">Akun Anda telah melewati masa aktif.</p>
+    <p class="expiry-modal-contact"><span id="accountExpiryPrefix">Silakan hubungi </span><a id="accountExpiryLink" class="hidden" href="https://cekresi.pabjiqueen.workers.dev/#" target="_blank" rel="noopener noreferrer"></a><span id="accountExpiryContactFallback" class="hidden">Admin Anda</span><span id="accountExpirySuffix"> untuk mengaktifkan kembali akun Anda.</span></p>
+    <button type="button" id="accountExpiryReturn" class="expiry-modal-action">Kembali ke Login</button>
+  </div>
+</dialog>
+
+
+
+
+</body></html>
+------MultipartBoundary--BUdCv5FUjDN780BPj77udxx69T4XeTskwv2pNEyugB----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: cid:css-8bb04bac-7455-4588-a927-0f1ec3f33ae0@mhtml.blink
+
+@charset "utf-8";
+
+:root { color-scheme: dark; --bg: #09090b; --panel: #17181c; --panel2: #1d2027; --muted: #9198a8; --line: #2a2e36; --orange: #ff460a; --green: #20d994; --red: #fb5670; --white: #f8fafc; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0px; background: var(--bg); color: var(--white); font: 14px / 1.5 system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+
+button, textarea { font: inherit; }
+
+button { cursor: pointer; }
+
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+button:focus-visible, a:focus-visible, tr:focus-visible { outline: rgb(255, 255, 255) solid 2px; outline-offset: 3px; }
+
+a { color: inherit; text-decoration: none; }
+
+.header { background: rgb(13, 13, 15); border-bottom: 1px solid rgb(41, 43, 50); padding: 14px clamp(16px, 2vw, 30px); display: flex; align-items: center; gap: 16px; justify-content: space-between; flex-wrap: wrap; }
+
+.brand { display: flex; gap: 12px; align-items: center; }
+
+.logo { width: 44px; height: 44px; border-radius: 12px; background: var(--orange); display: grid; place-items: center; font-weight: 900; font-size: 21px; }
+
+.brand-title { font-weight: 900; font-size: 18px; line-height: 1.15; letter-spacing: -0.4px; }
+
+.brand-title em { font-style: normal; color: rgb(139, 142, 152); }
+
+.subtitle { font-size: 10px; color: rgb(115, 121, 135); letter-spacing: 1.2px; font-weight: 800; }
+
+.account { display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
+
+.user-pill { max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 10px 15px; background: linear-gradient(135deg, rgb(37, 42, 51), rgb(21, 23, 27)); border-radius: 999px; border: 1px solid rgb(65, 73, 85); color: rgb(244, 246, 250); font-size: 12px; font-weight: 800; box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 18px; display: inline-flex; align-items: center; gap: 8px; }
+
+.user-pill::before { content: ""; width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: var(--green); box-shadow: rgba(32, 217, 148, 0.13) 0px 0px 0px 3px, rgba(32, 217, 148, 0.4) 0px 0px 10px; }
+
+.mini-btn { background: rgb(39, 41, 48); border: 1px solid rgb(54, 58, 66); border-radius: 9px; padding: 9px 12px; font-size: 12px; font-weight: 700; }
+
+.mini-btn:hover { background: rgb(55, 59, 70); }
+
+.mini-btn.accent { background: rgb(104, 37, 27); border-color: rgb(128, 49, 40); }
+
+.mini-btn.blue { background: rgb(24, 53, 104); border-color: rgb(35, 86, 155); }
+
+.layout { display: grid; grid-template-columns: minmax(260px, 300px) minmax(0px, 1fr); gap: 20px; max-width: 1700px; margin: 0px auto; padding: 20px clamp(12px, 1.6vw, 28px); align-items: start; }
+
+.panel { border: 1px solid var(--line); background: var(--panel); border-radius: 22px; box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 35px; }
+
+.sidebar { padding: 20px; position: sticky; top: 14px; }
+
+.sidebar h2 { margin: 0px 0px 3px; font-size: 16px; font-weight: 850; }
+
+.hint { color: var(--muted); font-size: 12px; }
+
+.text-area { display: block; margin: 14px 0px; width: 100%; min-height: 220px; height: min(46vh, 420px); resize: vertical; background: rgb(4, 4, 5); border: 1px solid rgb(57, 59, 66); border-radius: 13px; color: rgb(207, 228, 255); padding: 14px; outline: none; font: 13px / 1.55 ui-monospace, SFMono-Regular, Consolas, monospace; }
+
+.text-area:focus { border-color: var(--orange); }
+
+.input-meta { display: flex; justify-content: space-between; color: rgb(133, 139, 155); font-weight: 700; font-size: 12px; margin: 10px 0px 16px; }
+
+.input-meta strong { color: var(--orange); }
+
+.primary { width: 100%; border: 0px; border-radius: 12px; background: var(--orange); padding: 15px; color: white; font-size: 13px; font-weight: 850; transition: filter 0.15s; }
+
+.primary:hover { filter: brightness(1.12); }
+
+.side-actions { display: flex; gap: 9px; margin-top: 9px; }
+
+.side-actions button { background: rgb(41, 43, 49); color: rgb(255, 255, 255); border: 0px; border-radius: 11px; padding: 12px; flex: 1 1 0%; font-weight: 750; font-size: 12px; }
+
+.side-actions button:hover { background: rgb(52, 56, 64); }
+
+.content { min-width: 0px; }
+
+.filter-note { font-size: 11px; color: rgb(133, 140, 157); text-align: right; margin-bottom: 8px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 12px; }
+
+.stat { border-radius: 15px; padding: 15px 14px; min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 5px; border: 1px solid transparent; color: white; text-align: left; font-weight: 800; font-size: 14px; transition: border-color 0.12s, transform 0.12s; }
+
+.stat:hover { transform: translateY(-1px); }
+
+.stat[aria-pressed="true"] { outline: rgb(230, 232, 241) solid 2px; outline-offset: 1px; }
+
+.stat .value { border-radius: 50px; padding: 4px 11px; background: rgba(0, 0, 0, 0.333); color: rgb(255, 255, 255); font-size: 16px; font-variant-numeric: tabular-nums; }
+
+.stat-total { background: rgb(37, 43, 59); border-color: rgb(82, 91, 119); }
+
+.stat-process { background: rgb(68, 40, 21); border-color: rgb(133, 80, 36); color: rgb(255, 150, 75); }
+
+.stat-delivered { background: rgb(18, 55, 37); border-color: rgb(33, 116, 74); color: rgb(44, 239, 159); }
+
+.stat-failed { background: rgb(58, 32, 37); border-color: rgb(128, 53, 65); color: rgb(255, 107, 131); }
+
+.progress { margin: 15px 2px 18px; font-size: 13px; color: rgb(157, 164, 178); min-height: 22px; font-weight: 750; }
+
+.progress.success { color: rgb(24, 212, 138); }
+
+.progress.warn { color: rgb(255, 183, 99); }
+
+.results { overflow: hidden; }
+
+.results-header { background: linear-gradient(145deg, rgb(26, 29, 34), rgb(22, 23, 26)); padding: 18px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+
+.results-header h2 { font-size: 18px; margin: 0px; font-weight: 900; }
+
+.results-subtitle { font-size: 11px; color: rgb(140, 148, 164); margin: 2px 0px 0px; }
+
+.csv-btn { border: 0px; border-radius: 100px; background: rgb(255, 255, 255); color: rgb(8, 9, 11); padding: 11px 17px; font-weight: 850; font-size: 12px; white-space: nowrap; }
+
+.csv-btn:hover { background: rgb(231, 231, 234); }
+
+.csv-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+.csv-btn.secondary { background: rgb(52, 57, 67); color: rgb(248, 250, 252); border: 1px solid rgb(80, 85, 96); }
+
+.csv-btn.secondary:hover { background: rgb(69, 75, 88); }
+
+.table-scroll { overflow: auto; max-height: 69vh; }
+
+.data-table { border-collapse: collapse; text-align: left; width: 100%; min-width: 990px; font-size: 12px; }
+
+.data-table th { background: rgb(7, 7, 8); border-bottom: 1px solid rgb(52, 53, 59); color: rgb(155, 163, 181); font-weight: 800; letter-spacing: 0.7px; font-size: 10px; white-space: nowrap; padding: 13px 12px; }
+
+.data-table td { padding: 12px; border-bottom: 1px solid rgb(43, 46, 51); vertical-align: middle; }
+
+.data-table tbody tr.item { cursor: pointer; background: rgb(23, 24, 27); }
+
+.data-table tbody tr.item:hover { background: rgb(36, 38, 44); }
+
+.data-table tbody tr.item:focus-visible { outline-offset: -3px; }
+
+.data-table tbody tr.expanded { background: rgb(37, 40, 48); }
+
+.data-table tbody tr.details-row td { background: rgb(16, 18, 22); padding: 18px 16px; }
+
+.data-table tbody tr.details-row[hidden] { display: none; }
+
+.number { color: rgb(190, 195, 206); }
+
+.monospace { font: 12px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: 0.25px; color: rgb(219, 231, 247); }
+
+.subtle { color: rgb(160, 167, 180); }
+
+.chevron { color: rgb(137, 146, 166); font-size: 18px; text-align: right; }
+
+.status { border-radius: 24px; display: inline-flex; align-items: center; white-space: nowrap; padding: 6px 10px; font-size: 10px; font-weight: 850; border: 1px solid; }
+
+.status-process { color: rgb(255, 153, 74); border-color: rgb(153, 83, 23); background: rgb(55, 35, 19); }
+
+.status-delivered { color: rgb(36, 226, 154); border-color: rgb(19, 106, 71); background: rgb(13, 49, 35); }
+
+.status-failed { color: rgb(255, 99, 126); border-color: rgb(133, 50, 70); background: rgb(56, 25, 36); }
+
+.empty { text-align: center; font-family: ui-monospace, Consolas, monospace; padding: 50px 10px !important; color: rgb(119, 125, 139) !important; }
+
+.detail-heading { font-weight: 900; font-size: 13px; color: white; margin-bottom: 10px; }
+
+.detail-grid { display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 14px; margin-bottom: 14px; }
+
+.field-title { display: block; color: rgb(144, 152, 168); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+.field-val { display: block; overflow-wrap: anywhere; color: rgb(219, 225, 236); font-size: 12px; }
+
+.history { padding-top: 12px; border-top: 1px dashed rgb(71, 73, 81); }
+
+.history ul { margin: 8px 0px 0px; padding-left: 18px; }
+
+.history li { margin-bottom: 8px; color: rgb(205, 211, 222); font-size: 12px; }
+
+.history time { color: rgb(147, 155, 171); margin-right: 10px; }
+
+.error-text { color: rgb(255, 135, 154); }
+
+.hint-bottom { padding: 12px 18px; color: rgb(137, 145, 160); font-size: 11px; border-top: 1px solid rgb(41, 43, 49); }
+
+@media (max-width: 1050px) {
+  .stats { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+  .layout { grid-template-columns: 270px minmax(0px, 1fr); }
+  .stat { min-height: 65px; }
+  .detail-grid { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+
+@media (max-width: 740px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .text-area { height: 200px; min-height: 180px; }
+  .brand-title { font-size: 15px; }
+  .header { gap: 10px; }
+  .account { justify-content: flex-start; }
+  .detail-grid { grid-template-columns: 1fr 1fr; }
+  .table-scroll { max-height: none; }
+}
+
+@media (max-width: 390px) {
+  .stats { gap: 8px; }
+  .stat { font-size: 11px; padding: 10px; }
+  .stat .value { font-size: 13px; padding: 3px 8px; }
+  .results-header h2 { font-size: 15px; }
+}
+
+.hidden { display: none !important; }
+
+.balance-content { min-width: 0px; }
+
+.provider-balance { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 14px 0px 6px; padding: 13px 14px; border: 1px solid rgb(85, 65, 45); border-radius: 14px; background: linear-gradient(140deg, rgb(36, 27, 20), rgb(23, 24, 28)); }
+
+.provider-balance-title { font-size: 11px; color: rgb(217, 168, 121); font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; }
+
+.provider-balance-value { display: block; margin-top: 3px; font-size: 24px; line-height: 1.25; font-weight: 900; color: rgb(255, 255, 255); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+
+.provider-balance-meta { display: block; margin-top: 5px; font-size: 10px; color: rgb(167, 170, 179); overflow-wrap: anywhere; }
+
+.provider-balance-meta strong { font-size: 12px; font-weight: 850; color: rgb(248, 250, 252); }
+
+.provider-clock { display: grid; gap: 3px; margin-top: 9px; padding-top: 8px; border-top: 1px solid rgb(58, 49, 41); color: rgb(167, 170, 179); font-size: 10px; line-height: 1.45; font-variant-numeric: tabular-nums; }
+
+.provider-clock-date { display: flex; align-items: center; gap: 5px; overflow-wrap: anywhere; }
+
+.provider-clock-time { display: flex; align-items: center; gap: 5px; color: rgb(32, 217, 148); font-size: 12px; font-weight: 850; letter-spacing: 0.2px; }
+
+.provider-refresh { flex: 0 0 auto; width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid rgb(104, 80, 58); border-radius: 10px; background: rgb(48, 37, 27); color: rgb(255, 207, 155); }
+
+.provider-refresh:hover { background: rgb(70, 50, 34); }
+
+.provider-refresh:disabled { opacity: 0.6; cursor: wait; }
+
+.provider-refresh svg { width: 18px; height: 18px; }
+
+.provider-refresh.is-refreshing svg { animation: 0.8s linear 0s infinite normal none running provider-spin; }
+
+@keyframes provider-spin { 
+  100% { transform: rotate(360deg); }
+}
+
+.guest-protection { margin: 6px 0px 0px; padding: 0px; border: 0px; background: transparent; }
+
+.guest-protection-title, .guest-protection-note { display: none; }
+
+.guest-protection-status { display: block; margin-top: 6px; font-size: 11px; line-height: 1.45; color: rgb(251, 191, 36); }
+
+.guest-turnstile { margin: 0px; min-height: 0px; overflow: visible; }
+
+@media (max-width: 740px) {
+  .provider-balance { margin: 12px 0px; }
+  .provider-balance-value { font-size: 20px; }
+}
+
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 38px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel2); color: var(--white); font-size: 12px; font-weight: 800; white-space: nowrap; cursor: pointer; }
+
+.theme-toggle:hover { filter: brightness(1.08); }
+
+html[data-theme="light"] { color-scheme: light; --bg: #f3f5f8; --panel: #ffffff; --panel2: #edf1f6; --muted: #5f6b7b; --line: #d9e0e8; --white: #182230; }
+
+html[data-theme="light"] body { background: var(--bg); color: var(--white); }
+
+html[data-theme="light"] .header { background: rgb(255, 255, 255); border-bottom-color: rgb(220, 226, 233); }
+
+html[data-theme="light"] .brand-title em { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .subtitle { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .user-pill { background: linear-gradient(135deg, rgb(255, 255, 255), rgb(238, 242, 247)); border-color: rgb(213, 220, 229); color: rgb(36, 50, 68); box-shadow: rgba(15, 23, 42, 0.08) 0px 4px 18px; }
+
+html[data-theme="light"] .mini-btn { background: rgb(238, 242, 247); border-color: rgb(214, 221, 230); color: rgb(38, 53, 72); }
+
+html[data-theme="light"] .mini-btn:hover { background: rgb(225, 231, 239); }
+
+html[data-theme="light"] .mini-btn.accent { background: rgb(255, 240, 233); border-color: rgb(255, 208, 189); color: rgb(154, 52, 18); }
+
+html[data-theme="light"] .mini-btn.blue { background: rgb(234, 242, 255); border-color: rgb(191, 213, 251); color: rgb(29, 78, 216); }
+
+html[data-theme="light"] .panel { background: rgb(255, 255, 255); border-color: rgb(220, 226, 233); box-shadow: rgba(15, 23, 42, 0.06) 0px 10px 30px; }
+
+html[data-theme="light"] .text-area { background: rgb(248, 250, 252); color: rgb(30, 41, 59); border-color: rgb(203, 213, 225); }
+
+html[data-theme="light"] #courierSelect { background: rgb(255, 255, 255) !important; color: rgb(30, 41, 59) !important; border-color: rgb(203, 213, 225) !important; }
+
+html[data-theme="light"] .input-meta, html[data-theme="light"] .filter-note { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .side-actions button { background: rgb(233, 238, 245); color: rgb(36, 50, 68); }
+
+html[data-theme="light"] .side-actions button:hover { background: rgb(220, 228, 238); }
+
+html[data-theme="light"] .stat-total { background: rgb(232, 237, 247); border-color: rgb(196, 206, 224); color: rgb(51, 65, 85); }
+
+html[data-theme="light"] .stat-process { background: rgb(255, 241, 229); border-color: rgb(243, 199, 158); color: rgb(180, 83, 9); }
+
+html[data-theme="light"] .stat-delivered { background: rgb(228, 248, 238); border-color: rgb(166, 223, 192); color: rgb(8, 116, 67); }
+
+html[data-theme="light"] .stat-failed { background: rgb(255, 240, 242); border-color: rgb(240, 189, 199); color: rgb(190, 18, 60); }
+
+html[data-theme="light"] .stat .value { background: rgba(255, 255, 255, 0.667); color: inherit; }
+
+html[data-theme="light"] .stat[aria-pressed="true"] { outline-color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .progress { color: rgb(89, 101, 121); }
+
+html[data-theme="light"] .results-header { background: linear-gradient(145deg, rgb(248, 250, 252), rgb(237, 241, 246)); }
+
+html[data-theme="light"] .results-subtitle { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .csv-btn.secondary { background: rgb(232, 237, 244); color: rgb(38, 53, 72); border: 1px solid rgb(203, 213, 225); }
+
+html[data-theme="light"] .csv-btn.secondary:hover { background: rgb(220, 228, 238); }
+
+html[data-theme="light"] .data-table th { background: rgb(237, 241, 246); border-bottom-color: rgb(215, 222, 231); color: rgb(89, 101, 121); }
+
+html[data-theme="light"] .data-table td { border-bottom-color: rgb(226, 232, 240); }
+
+html[data-theme="light"] .data-table tbody tr.item { background: rgb(255, 255, 255); }
+
+html[data-theme="light"] .data-table tbody tr.item:hover { background: rgb(241, 245, 249); }
+
+html[data-theme="light"] .data-table tbody tr.expanded { background: rgb(234, 240, 247); }
+
+html[data-theme="light"] .data-table tbody tr.details-row td { background: rgb(247, 249, 252); }
+
+html[data-theme="light"] .number, html[data-theme="light"] .monospace, html[data-theme="light"] .subtle, html[data-theme="light"] .field-val, html[data-theme="light"] .history li, html[data-theme="light"] .history time { color: rgb(51, 65, 85); }
+
+html[data-theme="light"] .detail-heading { color: rgb(23, 32, 51); }
+
+html[data-theme="light"] .field-title, html[data-theme="light"] .chevron { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .history { border-top-color: rgb(203, 213, 225); }
+
+html[data-theme="light"] .hint-bottom { color: rgb(100, 116, 139); border-top-color: rgb(220, 226, 233); }
+
+html[data-theme="light"] .provider-balance { background: linear-gradient(140deg, rgb(255, 248, 239), rgb(255, 255, 255)); border-color: rgb(234, 215, 194); }
+
+html[data-theme="light"] .provider-balance-title { color: rgb(152, 85, 30); }
+
+html[data-theme="light"] .provider-balance-value, html[data-theme="light"] .provider-balance-meta strong { color: rgb(23, 32, 51); }
+
+html[data-theme="light"] .provider-balance-meta, html[data-theme="light"] .provider-clock { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .provider-clock { border-top-color: rgb(234, 223, 210); }
+
+html[data-theme="light"] .provider-refresh { background: rgb(255, 243, 231); border-color: rgb(231, 201, 170); color: rgb(154, 91, 39); }
+
+html[data-theme="light"] .provider-refresh:hover { background: rgb(255, 232, 210); }
+
+.expiry-modal { width: min(448px, 100% - 2rem); max-width: 448px; padding: 0px; overflow: visible; background: rgb(23, 24, 28); color: rgb(248, 250, 252); border: 1px solid rgb(127, 29, 29); border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.32) 0px 24px 70px; }
+
+.expiry-modal::backdrop { background: rgba(0, 0, 0, 0.68); backdrop-filter: blur(2px); }
+
+.expiry-modal-inner { padding: 20px; }
+
+.expiry-modal-heading { display: flex; align-items: center; gap: 12px; margin: 0px 0px 12px; }
+
+.expiry-modal-icon { font-size: 24px; line-height: 1; flex: 0 0 auto; }
+
+#accountExpiryTitle { margin: 0px; font-size: 18px; line-height: 1.3; font-weight: 900; color: rgb(252, 165, 165); }
+
+.expiry-modal-message, .expiry-modal-contact { margin: 0px; color: rgb(229, 231, 235); font-size: 14px; line-height: 1.6; }
+
+.expiry-modal-contact { margin-top: 5px; }
+
+#accountExpiryLink { color: rgb(103, 232, 249); text-decoration: underline; text-underline-offset: 3px; font-weight: 750; }
+
+#accountExpiryContactFallback { font-weight: 750; }
+
+.expiry-modal-action { display: block; width: 100%; margin-top: 20px; padding: 12px 14px; border: 0px; border-radius: 10px; background: rgb(220, 38, 38); color: rgb(255, 255, 255); font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-weight: 800; cursor: pointer; transition: background 0.15s, filter 0.15s; }
+
+.expiry-modal-action:hover { background: rgb(185, 28, 28); }
+
+.expiry-modal-action.is-quota-ended { background: rgb(55, 65, 81); color: rgb(255, 255, 255); }
+
+.expiry-modal-action.is-quota-ended:hover { background: rgb(75, 85, 99); }
+
+.expiry-modal-action:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+
+html[data-theme="light"] .expiry-modal { background: rgb(255, 255, 255); color: rgb(23, 32, 51); border-color: rgb(254, 202, 202); box-shadow: rgba(15, 23, 42, 0.22) 0px 24px 70px; }
+
+html[data-theme="light"] .expiry-modal::backdrop { background: rgba(15, 23, 42, 0.48); }
+
+html[data-theme="light"] #accountExpiryTitle { color: rgb(185, 28, 28); }
+
+html[data-theme="light"] .expiry-modal-message, html[data-theme="light"] .expiry-modal-contact { color: rgb(51, 65, 85); }
+
+html[data-theme="light"] #accountExpiryLink { color: rgb(14, 116, 144); }
+
+html[data-theme="light"] .expiry-modal-action { background: rgb(185, 28, 28); color: rgb(255, 255, 255); }
+
+html[data-theme="light"] .expiry-modal-action:hover { background: rgb(153, 27, 27); }
+
+html[data-theme="light"] .expiry-modal-action.is-quota-ended { background: rgb(71, 85, 105); color: rgb(255, 255, 255); }
+
+html[data-theme="light"] .expiry-modal-action.is-quota-ended:hover { background: rgb(51, 65, 85); }
+
+@media (max-width: 520px) {
+  .theme-toggle { padding: 8px 10px; }
+  .header { gap: 10px; }
+  .expiry-modal-inner { padding: 18px; }
+}
+
+@media (max-width: 520px) {
+  .theme-toggle { padding: 8px 10px; }
+  .header { gap: 10px; }
+}
+
+.home-password-modal { width: min(94vw, 480px); max-width: 480px; border: 1px solid rgb(71, 85, 105); border-radius: 16px; padding: 0px; background: rgb(23, 24, 28); color: rgb(248, 250, 252); box-shadow: rgba(0, 0, 0, 0.533) 0px 24px 70px; }
+
+.home-password-modal::backdrop { background: rgba(0, 0, 0, 0.6); }
+
+.home-password-inner { padding: 20px; }
+
+.home-password-heading, .home-password-actions { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+
+.home-password-heading h2 { font-size: 17px; font-weight: 850; color: rgb(253, 186, 116); }
+
+.home-password-heading button, .home-password-actions button { border: 1px solid rgb(75, 85, 99); border-radius: 9px; padding: 9px 13px; background: rgb(48, 52, 61); color: rgb(248, 250, 252); }
+
+.home-password-inner > p { font-size: 12px; color: rgb(167, 170, 179); margin: 10px 0px 16px; }
+
+.home-password-inner form label { display: block; font-size: 13px; margin: 12px 0px 5px; }
+
+.home-password-inner input { width: 100%; padding: 11px; border: 1px solid rgb(75, 85, 99); border-radius: 9px; background: rgb(37, 41, 50); color: rgb(248, 250, 252); }
+
+.home-password-actions { justify-content: flex-end; margin-top: 16px; }
+
+.home-password-actions button[type="submit"] { background: rgb(194, 65, 12); border-color: rgb(194, 65, 12); font-weight: 800; }
+
+.home-password-inner #homePasswordResult { font-size: 12px; color: rgb(252, 165, 165); margin-top: 10px; min-height: 16px; }
+
+html[data-theme="light"] .home-password-modal { background: rgb(255, 255, 255); color: rgb(23, 32, 51); border-color: rgb(214, 222, 232); box-shadow: rgba(15, 23, 42, 0.2) 0px 24px 70px; }
+
+html[data-theme="light"] .home-password-inner > p { color: rgb(100, 116, 139); }
+
+html[data-theme="light"] .home-password-heading h2 { color: rgb(154, 52, 18); }
+
+html[data-theme="light"] .home-password-heading button, html[data-theme="light"] .home-password-actions button { background: rgb(237, 241, 246); color: rgb(38, 53, 72); border-color: rgb(212, 220, 230); }
+
+html[data-theme="light"] .home-password-inner input { background: rgb(248, 250, 252); color: rgb(23, 32, 51); border-color: rgb(203, 213, 225); }
+
+html[data-theme="light"] .home-password-actions button[type="submit"] { background: rgb(194, 65, 12); color: white; border-color: rgb(194, 65, 12); }
+------MultipartBoundary--BUdCv5FUjDN780BPj77udxx69T4XeTskwv2pNEyugB------
